@@ -143,7 +143,10 @@
         <section id="contacto" class="section">
             <div class="container">
                 <h2 class="section-title">Enviame un <span class="highlight-text">Mensaje</span></h2>
-                <form class="card contact-form" action="#" method="POST" aria-label="Formulario de contacto">
+
+                <!-- action apunta al ancla #mensaje-enviado -->
+                <form class="card contact-form" action="#mensaje-enviado" method="GET"
+                    aria-label="Formulario de contacto">
                     <div class="form-group">
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required
@@ -164,6 +167,16 @@
 
                     <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
                 </form>
+
+                <!-- Modal de confirmación 100% HTML y CSS -->
+                <div id="mensaje-enviado" class="modal-overlay">
+                    <div class="modal-box card">
+                        <div class="modal-icon">✓</div>
+                        <h3>¡Mensaje enviado!</h3>
+                        <p>Gracias por tu mensaje. A la brevedad me pondré en contacto contigo.</p>
+                        <a href="#contacto" class="btn btn-primary btn-modal">Aceptar</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

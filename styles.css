@@ -470,6 +470,88 @@ ul {
     color: var(--primary);
 }
 
+
+
+
+
+/* ==========================================================================
+   MODAL DE FEEDBACK (100% CSS CON :TARGET)
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Se activa automáticamente cuando la URL contiene #mensaje-enviado */
+.modal-overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box {
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-color: var(--primary);
+    box-shadow: 0 0 30px var(--primary-glow);
+}
+
+.modal-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(34, 197, 94, 0.15);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.modal-box h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.modal-box p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.btn-modal {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 /* ==========================================================================
    8. MEDIA QUERIES (RESPONSIVE)
    ========================================================================== */
