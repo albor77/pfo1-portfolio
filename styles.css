@@ -72,94 +72,54 @@ ul {
 
 
 /*    HEADER & NAVEGACIÓN  */
+
 .header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(20, 22, 29, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color);
-    transition: all var(--transition-normal);
+    background-color: var(--bg-main);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background-color var(--transition-normal);
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 80px;
+    max-width: 1240px;
 }
 
-/* Logotipo */
+/* Logo "Portfolio." */
 .logo {
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     font-weight: 800;
-    color: var(--text-main);
+    color: #ffffff;
     letter-spacing: -0.5px;
 }
 
-.logo span {
-    color: var(--primary);
-    text-shadow: 0 0 10px var(--primary-glow);
-}
-
-/* Enlaces del Nav */
+/* Lista de enlaces alineados a la derecha */
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.2rem;
 }
 
 .nav-link {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    position: relative;
-    padding: 0.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
     transition: color var(--transition-fast);
 }
 
+/* Elemento Activo y Hover en Verde Sólido */
 .nav-link:hover,
-.nav-link.active {
-    color: var(--primary);
+.nav-link:focus-visible {
+  color: var(--primary); /* #22c55e */
 }
 
-/* Indicador animado bajo el link */
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary);
-    box-shadow: 0 0 8px var(--primary);
-    transition: width var(--transition-normal);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
-/* Botón de acción / CTA secundario */
-.btn-nav {
-    padding: 0.55rem 1.25rem;
-    border: 1px solid var(--primary);
-    border-radius: 8px;
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all var(--transition-fast);
-}
-
-.btn-nav:hover {
-    background-color: var(--primary);
-    color: var(--bg-main);
-    box-shadow: 0 0 16px var(--primary-glow);
-}
 
 
 /*    SECCION HERO & EFECTOS NEÓN */
