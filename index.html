@@ -127,7 +127,44 @@
                 </article>
             </div>
         </section>
+
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="section container">
+            <h2 class="section-title">Enviame un <span class="highlight-text">Mensaje</span></h2>
+            <form class="card contact-form" action="#" method="POST" aria-label="Formulario de contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required
+                        autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required
+                        autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta acá..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
+
+
+    <!-- footer y GitHub -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Christian Albornoz. IFTS 29 - Front End.</p>
+            <a href="https://github.com/albor77" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub:
+                albor77</a>
+        </div>
+    </footer>
 
 </body>
 
