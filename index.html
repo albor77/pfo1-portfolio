@@ -123,16 +123,20 @@
                 <div class="grid-projects">
                     <article class="card project-item">
                         <h3>SePrice — Turnos</h3>
-                        <p>Sistema de gestión de consultorios externos y asignación de turnos médicos desarrollado en TypeScript.</p>
+                        <p>Sistema de gestión de consultorios externos y asignación de turnos médicos desarrollado en
+                            TypeScript.</p>
                         <a href="https://github.com/albor77/seprice-turnos" target="_blank" rel="noopener noreferrer"
-                            class="link-github" aria-label="Ver repositorio de SePrice en GitHub">Ver en GitHub &rarr;</a>
+                            class="link-github" aria-label="Ver repositorio de SePrice en GitHub">Ver en GitHub
+                            &rarr;</a>
                     </article>
 
                     <article class="card project-item">
                         <h3>Club Deportivo</h3>
-                        <p>Aplicación móvil nativa en Kotlin para la gestión de socios y cuotas. Incluye también versión desarrollada en C# / .NET.</p>
-                        <a href="https://github.com/albor77/club-deportivo-mobile" target="_blank" rel="noopener noreferrer"
-                            class="link-github" aria-label="Ver repositorio de Club Deportivo Mobile en GitHub">Ver en GitHub &rarr;</a>
+                        <p>Aplicación móvil nativa en Kotlin para la gestión de socios y cuotas. Incluye también versión
+                            desarrollada en C# / .NET.</p>
+                        <a href="https://github.com/albor77/club-deportivo-mobile" target="_blank"
+                            rel="noopener noreferrer" class="link-github"
+                            aria-label="Ver repositorio de Club Deportivo Mobile en GitHub">Ver en GitHub &rarr;</a>
                     </article>
                 </div>
             </div>
@@ -167,11 +171,12 @@
                     <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
                 </form>
 
-                <!-- Modal de confirmación  -->
-                <div id="mensaje-enviado" class="modal-overlay">
+                <!-- Modal de confirmación -->
+                <div id="mensaje-enviado" class="modal-overlay" role="dialog" aria-modal="true"
+                    aria-labelledby="modal-titulo">
                     <div class="modal-box card">
-                        <div class="modal-icon">✓</div>
-                        <h3>¡Mensaje enviado!</h3>
+                        <div class="modal-icon" aria-hidden="true">✓</div>
+                        <h3 id="modal-titulo">¡Mensaje enviado!</h3>
                         <p>Gracias por tu mensaje. A la brevedad me pondré en contacto contigo.</p>
                         <a href="#contacto" class="btn btn-primary btn-modal">Aceptar</a>
                     </div>

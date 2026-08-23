@@ -18,7 +18,7 @@
     --text-muted: #94a3b8;
     --border-color: #2d3748;
 
-    
+
     --font-family: 'Plus Jakarta Sans', sans-serif;
 
     /* Transiciones */
@@ -609,7 +609,7 @@ ul {
         padding: 1.5rem;
     }
 
-    .modal-content {
+    .modal-box {
         width: 85%;
         max-width: 450px;
         padding: 2rem 1.5rem;
@@ -641,10 +641,8 @@ ul {
         font-size: 1rem;
     }
 
-    .modal-content {
+    .modal-box {
         width: 92%;
         padding: 1.5rem 1rem;
     }
 }
-
-
