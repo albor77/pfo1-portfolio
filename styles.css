@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. IMPORTACIÓN DE FUENTES & VARIABLES GLOBALES
-   ========================================================================== */
+/*   IMPORTACIÓN DE FUENTES & VARIABLES GLOBALES    */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -20,7 +18,7 @@
     --text-muted: #94a3b8;
     --border-color: #2d3748;
 
-    /* Tipografía */
+    
     --font-family: 'Plus Jakarta Sans', sans-serif;
 
     /* Transiciones */
@@ -28,9 +26,7 @@
     --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==========================================================================
-   2. RESET Y ESTILOS BASE
-   ========================================================================== */
+/* RESET Y ESTILOS BASE */
 *,
 *::before,
 *::after {
@@ -79,9 +75,7 @@ ul {
     text-shadow: 0 0 12px var(--primary-glow);
 }
 
-/* ==========================================================================
-   3. HEADER & NAVEGACIÓN
-   ========================================================================== */
+/*    HEADER & NAVEGACIÓN  */
 .header {
     position: sticky;
     top: 0;
@@ -131,9 +125,7 @@ ul {
     color: var(--primary);
 }
 
-/* ==========================================================================
-   4. HERO SECTION & EFECTO ARCO NEÓN
-   ========================================================================== */
+/*   SECCION HERO & EFECTO NEÓN */
 .hero {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -273,9 +265,7 @@ ul {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* ==========================================================================
-   5. SECCIONES GLOBALES, SOBRE MÍ & HABILIDADES
-   ========================================================================== */
+/*   SECCIONES GLOBALES, SOBRE MÍ & HABILIDADES */
 .section {
     padding: 6rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -336,9 +326,7 @@ ul {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   6. SECCIÓN DE PROYECTOS
-   ========================================================================== */
+/*   SECCIÓN DE PROYECTOS  */
 .grid-projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -383,9 +371,8 @@ ul {
     transform: translateX(4px);
 }
 
-/* ==========================================================================
-   7. FORMULARIO DE CONTACTO & FOOTER
-   ========================================================================== */
+/* FORMULARIO DE CONTACTO & FOOTER */
+
 .contact-form {
     max-width: 650px;
     margin: 0 auto;
@@ -474,9 +461,7 @@ ul {
 
 
 
-/* ==========================================================================
-   MODAL DE FEEDBACK (100% CSS CON :TARGET)
-   ========================================================================== */
+/*   MODAL FEEDBACK  */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -551,10 +536,9 @@ ul {
 
 
 
+/*     MEDIA QUERIES (RESPONSIVE)    */
 
-/* ==========================================================================
-   8. MEDIA QUERIES (RESPONSIVE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
     .hero-container {
         flex-direction: column;
@@ -624,14 +608,43 @@ ul {
     .contact-form {
         padding: 1.5rem;
     }
+
+    .modal-content {
+        width: 85%;
+        max-width: 450px;
+        padding: 2rem 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .btn-primary {
-        width: 100%;
-    }
-
     .hero-title {
         font-size: 2.1rem;
     }
+
+    .hero-image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        width: 92%;
+        padding: 1.5rem 1rem;
+    }
 }
+
+
